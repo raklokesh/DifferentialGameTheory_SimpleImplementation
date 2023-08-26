@@ -1,4 +1,4 @@
-# Differential Game Theory Illustrative Implementation
+# Differential Game Theory: Illustrative Implementation
 
 Implementation of differential game theoretic solution for a simple spatial negotiation problem between two agents.
 
@@ -26,7 +26,27 @@ The control feedback gains are obtained using recursive equations derived in Cha
 
 Running the simulation yields the following solution trajectories.
 <p align="center"> 
-<img src="https://github.com/raklokesh/DifferentialGameTheory_SimpleImplementation/blob/main/UnsharedCosts.png" width="400px">
+<img src="https://github.com/raklokesh/DifferentialGameTheory_SimpleImplementation/blob/main/UnsharedCosts_.png" width="400px">
 </p>
+
+<p align="justify"> 
+It is also possible to share the control effort costs of each agent with another by designing the cost functions appropriately. The script has options to specify whether control costs are shared for each agent. When control costs are shared the agents move in a more cooeprative manner.
+</p>
+
+<p align="center"> 
+  <img src="https://github.com/raklokesh/DifferentialGameTheory_SimpleImplementation/blob/main/SharedCosts_.png" width="400px">
+</p>
+
+<p align="justify"> 
+This behavior would be observed if single entity having a combined cost function controls both agents. Such a behavior can be modelled using a single Linear Quadratic Regulator. See class 'TwoHands_Model'. Running simulation of the single LQR yields the following trajectories.
+</p>
+
+<p align="center"> 
+  <img src="https://github.com/raklokesh/DifferentialGameTheory_SimpleImplementation/blob/main/SingleLQR.png" width="400px">
+</p>
+
+
+
+ 
 
 
