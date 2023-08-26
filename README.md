@@ -24,7 +24,7 @@ Each agent has its own cost function that aims to minimize the control effort, d
 The control feedback gains are obtained using recursive equations derived in Chapter 6, Dynamic Non-Cooperative Game Theory, Basar and Olsder. In short, each agent does not gain anything by deviating from the derived control policy.
 </p>
 
-Running the simulation yields the following solution trajectories.
+Running a simulation yields the following solution trajectories.
 <p align="center"> 
 <img src="https://github.com/raklokesh/DifferentialGameTheory_SimpleImplementation/blob/main/UnsharedCosts_.png" width="400px">
 </p>
@@ -38,7 +38,7 @@ It is also possible to share the control effort costs of each agent with another
 </p>
 
 <p align="justify"> 
-This behavior would be observed if single entity having a combined cost function controls both agents. Such a behavior can be modelled using a single Linear Quadratic Regulator. See class 'TwoHands_Model'. Running simulation of the single LQR yields the following trajectories.
+The same movement behavior would be observed if a single entity with a single cost function controlled both agents. Such a behavior can be modelled using a single Linear Quadratic Regulator (See class 'TwoHands_Model'). Running a simulation of the single LQR yields the following trajectories.
 </p>
 
 <p align="center"> 
